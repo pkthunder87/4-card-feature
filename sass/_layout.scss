@@ -5,3 +5,16 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.container {
+  padding-inline: 4em;
+  padding-block-start: 5em;
+  padding-block-end: 4em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -29,6 +29,11 @@ html {
   text-size-adjust: none;
   font-size: 62.5%;
 }
+@media (max-width: 825px) {
+  html {
+    font-size: 100%;
+  }
+}
 
 /* Set core body defaults */
 body {
@@ -74,6 +79,29 @@ select {
 /* =============
    End of reset 
    ============= */
+.header {
+  max-width: 44%;
+  text-align: center;
+}
+@media (max-width: 825px) {
+  .header {
+    max-width: 90%;
+  }
+}
+.header__title {
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1rem + 1.6vw, 4rem);
+  margin-block-end: 1rem;
+}
+.header__subtitle {
+  font-weight: 200;
+  font-size: clamp(0.8rem, 1rem + 1.6vw, 4rem);
+}
+.header__text {
+  font-size: clamp(0.8rem, 0.2rem + 1vw, 1.7rem);
+  font-weight: 200;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -81,6 +109,19 @@ select {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.container {
+  padding-inline: 4em;
+  padding-block-start: 5em;
+  padding-block-end: 4em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
