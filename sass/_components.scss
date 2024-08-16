@@ -1,6 +1,7 @@
 .header {
   max-width: 44%;
   text-align: center;
+  margin-bottom: 3em;
 
   @media (max-width: 825px) {
     max-width: 90%;
@@ -22,5 +23,63 @@
     font-weight: 200;
 
     text-wrap: pretty;
+  }
+}
+
+.four-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  grid-template-rows: 1fr 1fr;
+  // background-color: var(--accent-cyan);
+  align-items: center;
+  margin-bottom: 2em;
+
+  width: 90%;
+
+  .card {
+    box-shadow: 1px 10px 15px 5px hsla(212, 86%, 64%, 0.14);
+
+    padding: 2em;
+    border-radius: 8px;
+
+    &__title {
+      margin-bottom: 0.5em;
+      font-size: 2rem;
+    }
+
+    &__text {
+      margin-bottom: 2em;
+      width: 94%;
+      font-size: 1.2rem;
+    }
+
+    &__img {
+      margin-left: auto;
+    }
+  }
+
+  .card--1 {
+    border-top: 4px solid var(--accent-cyan);
+    grid-row: span 2;
+
+    height: calc(50% - 1em);
+    justify-self: center;
+  }
+
+  .card--2 {
+    border-top: 4px solid var(--accent-red);
+  }
+
+  .card--3 {
+    border-top: 4px solid var(--accent-orange);
+
+    order: 1;
+  }
+
+  .card--4 {
+    @extend .card--1;
+
+    border-top: 4px solid var(--accent-blue);
   }
 }
