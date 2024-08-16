@@ -20,5 +20,7 @@
   &__text {
     font-size: clamp(0.8rem, 0.2rem + 1vw, 1.7rem);
     font-weight: 200;
+
+    text-wrap: pretty;
   }
 }
