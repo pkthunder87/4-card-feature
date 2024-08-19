@@ -1,6 +1,12 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  text-wrap: balance;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -13,6 +19,12 @@
 
   @media (max-width: 950px) {
     padding-inline: 1em;
+    padding-block-start: 2em;
+    padding-block-end: 2em;
+  }
+
+  @media (max-width: 600px) {
+    padding-inline: 1.5em;
     padding-block-start: 2em;
     padding-block-end: 2em;
   }
