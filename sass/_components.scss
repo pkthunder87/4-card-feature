@@ -5,10 +5,15 @@
 .header {
   max-width: 44%;
   text-align: center;
-  margin-block-end: 3em;
+  margin-block-end: 3.5em;
+
+  @media (max-width: 1350px) {
+    max-width: 60%;
+    margin-block-end: 5em;
+  }
 
   @media (max-width: 1200px) {
-    max-width: 90%;
+    max-width: 70%;
     margin-block-end: 2em;
   }
 
@@ -28,11 +33,27 @@
     font-weight: 600;
     font-size: clamp(1.9rem, 1rem + 2vw, 4rem);
     margin-block-end: 1rem;
+
+    @media (max-width: 1350px) {
+      font-size: 8rem;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: clamp(1.9rem, 1rem + 2vw, 2.5rem);
+    }
   }
 
   &__subtitle {
     font-weight: 200;
     font-size: clamp(1.9rem, 1rem + 2vw, 4rem);
+
+    @media (max-width: 1350px) {
+      font-size: 8rem;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: clamp(1.9rem, 1rem + 2vw, 2.5rem);
+    }
   }
 
   &__text {
@@ -40,6 +61,14 @@
     font-weight: 200;
 
     text-wrap: pretty;
+
+    @media (max-width: 1350px) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: clamp(1.2rem, 0.2rem + 1vw, 1.7rem);
+    }
 
     @media (max-width: 600px) {
       text-wrap: balance;
@@ -55,11 +84,11 @@
 .four-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em;
+  gap: 4em;
   grid-template-rows: 1fr 1fr;
   // background-color: var(--accent-cyan);
   align-items: center;
-  margin-block-end: 2em;
+  margin-block-end: 4em;
 
   width: 90%;
 
@@ -68,6 +97,9 @@
   @media (max-width: 1200px) {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+
+    margin-block-end: 2em;
   }
 
   @media (max-width: 600px) {
@@ -81,7 +113,7 @@
 
     width: 100%;
 
-    padding: 2em;
+    padding: 4em;
     border-radius: 8px;
 
     @media (max-width: 1200px) {
@@ -94,14 +126,14 @@
 
     &__title {
       margin-block-end: 0.5em;
-      font-size: clamp(1rem, 0.2rem + 5vw, 4rem);
+      font-size: clamp(1rem, 0.2rem + 5vw, 6rem);
 
       @media (max-width: 1200px) {
-        font-size: clamp(0.5rem, 0.4rem + 2vw, 3rem);
+        font-size: clamp(0.5rem, 0.4rem + 2vw, 1.5rem);
       }
 
       @media (max-width: 600px) {
-        font-size: clamp(1rem, 0.2rem + 5vw, 4rem);
+        font-size: clamp(1rem, 0.2rem + 5vw, 1.7rem);
       }
     }
 

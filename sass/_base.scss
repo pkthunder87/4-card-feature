@@ -48,6 +48,10 @@ html {
   text-size-adjust: none;
   font-size: 62.5%;
 
+  @media (max-width: 1350px) {
+    font-size: 25%;
+  }
+
   @media (max-width: 1200px) {
     font-size: 100%;
   }
