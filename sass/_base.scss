@@ -46,7 +46,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  font-size: 62.5%;
+  font-size: 21%;
 
   @media (max-width: 1350px) {
     font-size: 25%;
@@ -61,6 +61,7 @@ html {
 body {
   /*Box model stuff*/
   min-height: 100vh;
+  max-width: 100vw;
   /*Typography stuff*/
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;

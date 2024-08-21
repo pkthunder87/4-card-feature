@@ -13,9 +13,15 @@
 }
 
 .container {
-  padding-inline: 4em;
-  padding-block-start: 6em;
+  padding-inline: 18.8em;
+  padding-block-start: 4.8em;
   padding-block-end: 4em;
+
+  @media (max-width: 1350px) {
+    padding-inline: 4em;
+    padding-block-start: 6em;
+    padding-block-end: 4em;
+  }
 
   @media (max-width: 1200px) {
     padding-inline: 2em;

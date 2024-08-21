@@ -84,20 +84,24 @@
 .four-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4em;
+  gap: 7em;
   grid-template-rows: 1fr 1fr;
   // background-color: var(--accent-cyan);
   align-items: center;
-  margin-block-end: 4em;
 
   width: 90%;
 
   font-size: 80%;
 
+  @media (max-width: 1350px) {
+    margin-block-end: 2em;
+    gap: 6em;
+  }
+
   @media (max-width: 1200px) {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    gap: 1.5em;
 
     margin-block-end: 2em;
   }
@@ -113,8 +117,15 @@
 
     width: 100%;
 
-    padding: 4em;
+    padding-inline: 7em;
+    padding-block: 6em;
     border-radius: 8px;
+
+    background: #fff;
+
+    @media (max-width: 1350px) {
+      padding: 4em;
+    }
 
     @media (max-width: 1200px) {
       padding: 1.2em;
@@ -138,9 +149,13 @@
     }
 
     &__text {
-      margin-block-end: 2em;
+      margin-block-end: 2.5em;
       width: 100%;
       font-size: clamp(1rem, 0.2rem + 3vw, 4rem);
+
+      @media (max-width: 1200px) {
+        margin-block-end: 2em;
+      }
 
       @media (max-width: 1200px) {
         font-size: clamp(0.5rem, 0.4rem + 1vw, 3rem);
@@ -170,8 +185,12 @@
     border-top: 4px solid var(--accent-cyan);
     grid-row: span 2;
 
-    height: calc(50% - 1em);
+    height: calc(50% - 3.5em);
     justify-self: center;
+
+    @media (max-width: 1350px) {
+      height: calc(50% - 3em);
+    }
 
     @media (max-width: 1200px) {
       height: 100%;
