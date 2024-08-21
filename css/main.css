@@ -193,6 +193,7 @@ select {
   align-items: center;
   width: 90%;
   font-size: 80%;
+  margin-block-end: 4em;
 }
 @media (max-width: 1350px) {
   .four-card {
@@ -215,11 +216,12 @@ select {
   }
 }
 .four-card .card {
+  display: grid;
   box-shadow: 1px 10px 15px 5px hsla(212, 86%, 64%, 0.14);
   width: 100%;
-  padding-inline: 7em;
-  padding-block: 6em;
-  border-radius: 8px;
+  padding: 7.5em;
+  padding-block-end: 7.3em;
+  border-radius: 5px;
   background: #fff;
 }
 @media (max-width: 1350px) {
@@ -240,6 +242,13 @@ select {
 .four-card .card__title {
   margin-block-end: 0.5em;
   font-size: clamp(1rem, 0.2rem + 5vw, 6rem);
+  margin-block-start: -1.8rem;
+}
+@media (max-width: 1350px) {
+  .four-card .card__title {
+    margin-block-start: 0;
+    margin-inline-start: 0rem;
+  }
 }
 @media (max-width: 1200px) {
   .four-card .card__title {
@@ -252,9 +261,17 @@ select {
   }
 }
 .four-card .card__text {
-  margin-block-end: 2.5em;
+  margin-block-end: 3em;
   width: 100%;
   font-size: clamp(1rem, 0.2rem + 3vw, 4rem);
+  margin-block-start: -1.6rem;
+  line-height: 1.7em;
+}
+@media (max-width: 1350px) {
+  .four-card .card__text {
+    line-height: normal;
+    margin-block-start: 0;
+  }
 }
 @media (max-width: 1200px) {
   .four-card .card__text {
@@ -274,7 +291,8 @@ select {
   }
 }
 .four-card .card__img {
-  margin-left: auto;
+  margin-inline-start: auto;
+  align-self: end;
 }
 @media (max-width: 1200px) {
   .four-card .card__img {
