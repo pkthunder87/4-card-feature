@@ -104,7 +104,7 @@ select {
 .header {
   max-width: 44%;
   text-align: center;
-  margin-block-end: 3.5em;
+  margin-block-end: 12em;
 }
 @media (max-width: 1350px) {
   .header {
@@ -133,12 +133,13 @@ select {
 }
 .header__title {
   font-weight: 600;
-  font-size: clamp(1.9rem, 1rem + 2vw, 4rem);
-  margin-block-end: 1rem;
+  font-size: 10.8rem;
+  margin-block-end: 4.3rem;
 }
 @media (max-width: 1350px) {
   .header__title {
     font-size: 8rem;
+    margin-block-end: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -148,7 +149,8 @@ select {
 }
 .header__subtitle {
   font-weight: 200;
-  font-size: clamp(1.9rem, 1rem + 2vw, 4rem);
+  font-size: 10.8rem;
+  margin-block-end: -1rem;
 }
 @media (max-width: 1350px) {
   .header__subtitle {
@@ -161,13 +163,14 @@ select {
   }
 }
 .header__text {
-  font-size: clamp(1.2rem, 0.2rem + 1vw, 1.7rem);
-  font-weight: 200;
+  font-size: 4.5rem;
+  font-weight: 400;
   text-wrap: pretty;
 }
 @media (max-width: 1350px) {
   .header__text {
     font-size: 5rem;
+    font-weight: 200;
   }
 }
 @media (max-width: 1200px) {
@@ -193,7 +196,7 @@ select {
   align-items: center;
   width: 90%;
   font-size: 80%;
-  margin-block-end: 4em;
+  margin-block-end: 6em;
 }
 @media (max-width: 1350px) {
   .four-card {
@@ -369,7 +372,7 @@ select {
 
 .container {
   padding-inline: 18.8em;
-  padding-block-start: 4.8em;
+  padding-block-start: 15.8em;
   padding-block-end: 4em;
 }
 @media (max-width: 1350px) {
